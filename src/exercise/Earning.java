@@ -5,6 +5,10 @@ public class Earning {
 	float amount;
 	
 	
+	public Earning(typeEnum type, float i) {
+		this.type = type;
+		this.amount = i;
+	}
 	public typeEnum getType() {
 		return type;
 	}

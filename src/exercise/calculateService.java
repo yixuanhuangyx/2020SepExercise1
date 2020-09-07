@@ -11,7 +11,7 @@ public class calculateService {
 		.filter(employee -> !employee.isIntern()) // check if the employee is non-intern
 		.map(employee -> calculeValidatedEarningSum(employee.getEarnings())) // calculate the sum of employee's validated earnings
 		.filter(earningsSum -> earningsSum * 2.5f > 1014.00f) // check if the earning amount pass the min wage limit
-		.map(validatedSum -> new BigDecimal(String.format("%.3f",Float.toString(validatedSum * 0.06f)))) // convert the validated sum to BigDecimal and multiply by 6%
+		.map(validatedSum -> new BigDecimal(Float.toString(validatedSum * 0.06f))) // convert the validated sum to BigDecimal and multiply by 6%
 		.reduce(BigDecimal.ZERO, BigDecimal::add); // calculate the result for all employees	
 	}
 	
