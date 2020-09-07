@@ -34,9 +34,7 @@ public class Main {
 		employees.add(employee2);
 		
 		BigDecimal res = calculateService.calculate(employees);
-//		BigDecimal expectedResult = new BigDecimal("120.18");
-//		assert expectedResult.equals(res);
-		System.out.print(res);
+		System.out.print("The result expected: 120.18; The result obtained: " + res);
 	}
 	
 }
