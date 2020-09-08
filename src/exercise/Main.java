@@ -34,7 +34,8 @@ public class Main {
 		employees.add(employee2);
 		
 		BigDecimal res = calculateService.calculate(employees);
-		System.out.print("The result expected: 120.18; The result obtained: " + res);
+		System.out.println("The result expected: 120.18; The result obtained: " + res);
+
 	}
 	
 }
